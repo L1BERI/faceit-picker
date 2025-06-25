@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/logo.png">
     <style>
         body {
             background: linear-gradient(135deg, #232526 0%, #414345 100%);
@@ -36,6 +37,7 @@
             margin-bottom: 12px;
             letter-spacing: 1px;
             animation: slideDown 1s cubic-bezier(.77,0,.18,1) 0.2s both;
+            text-align: center;
         }
         h2 {
             color: #1a73e8;
@@ -114,10 +116,60 @@
             from { opacity: 0; transform: scale(0.95); }
             to { opacity: 1; transform: scale(1); }
         }
+        .policy-link {
+            margin-top: 32px;
+            text-align: center;
+        }
+        .policy-link a {
+            color: #1a73e8;
+            font-size: 1.1rem;
+            text-decoration: none;
+            border-bottom: 1px dashed #1a73e8;
+            padding: 4px 12px;
+            border-radius: 6px;
+            transition: background 0.2s, color 0.2s, border 0.2s;
+            display: inline-block;
+        }
+        .policy-link a:hover {
+            background: #1a73e8;
+            color: #fff;
+            border-bottom: 1px solid #fff;
+        }
+        .site-logo {
+            display: block;
+            margin: 0 auto 18px auto;
+            width: 80px;
+            height: 80px;
+            border-radius: 18px;
+            box-shadow: 0 2px 12px 0 rgba(0,0,0,0.18);
+            background: #232526;
+            object-fit: cover;
+            animation: fadeIn 1.2s cubic-bezier(.77,0,.18,1) 0.1s both;
+        }
+        .contacts-link {
+            margin-top: 18px;
+            text-align: center;
+        }
+        .contacts-link a {
+            color: #24a1de;
+            font-size: 1.1rem;
+            text-decoration: none;
+            border-bottom: 1px dashed #24a1de;
+            padding: 4px 12px;
+            border-radius: 6px;
+            transition: background 0.2s, color 0.2s, border 0.2s;
+            display: inline-block;
+        }
+        .contacts-link a:hover {
+            background: #24a1de;
+            color: #fff;
+            border-bottom: 1px solid #fff;
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <img src="img/logo.png" alt="FACEIT Picker Logo" class="site-logo">
         <h1>Welcome to FACEIT picker! <span class="emoji">🎮</span></h1>
         <div class="feature">Our extension currently has <b>2 main functions</b>:</div>
         <div class="feature"><b>Position picker <span class="emoji">📍</span></b><br>Players can write the positions they play on different maps and the extension will automatically send them to the chat immediately after choosing a map.<br>
@@ -138,6 +190,12 @@
             <li>Remove all comments</li>
         </ul>
         <div class="thanks">Thank you for using our extension! <span class="emoji">🙏</span></div>
+        <div class="policy-link">
+            <a href="privacy-policy.html" target="_blank">&#128274; Privacy Policy</a>
+        </div>
+        <div class="contacts-link">
+            <a href="https://t.me/evoa_studio" target="_blank">&#128172; Contact us on Telegram: @evoa_studio</a>
+        </div>
     </div>
     <script>
         // Animate features in sequence
