@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # FACEIT Picker
 
 <img src="./img/logo.png" alt="FACEIT Picker Logo" width="120" style="margin-bottom: 16px;">
